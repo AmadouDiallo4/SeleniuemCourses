@@ -1,0 +1,21 @@
+Feature: Reset functionality on login page of Application
+Scenario Outline: Verification of reset button with numbers of credential
+	Given Open the Firefox and launch the application
+	
+	when Enter the Username and Password
+	
+	Then Reset the credential
+	
+	Examples:
+	
+	|username	|password		|
+	|user1		|password1		|
+	|user2		|password2		|
+	|user3		|password3		|
+	
+	//Scenario: Verification of Reset button
+		//Given Open the Firefox and launch the application
+		//When  Enter the Username and Password
+		//Then  Reset the credential
+		
+	

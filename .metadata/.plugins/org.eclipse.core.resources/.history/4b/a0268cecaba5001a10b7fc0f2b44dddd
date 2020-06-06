@@ -1,0 +1,41 @@
+package com.bouygues.fr;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import com.bouygues.fr.MethodsBouygues;
+
+
+public class ScenarioBouygues {
+	
+	WebDriver driver = new FirefoxDriver();
+	
+	public void MyDeroulScenarios() {
+		//1 launchNavigator and maximize window
+		MethodsBouygues.LaunchNavigator(driver, "https://www.bouyguestelecom.fr");
+		//2 get title and url
+		MethodsBouygues.GetTitleAndUrlAndCompare(driver);
+		// Navigation
+		//3 go to Mobile page
+		MethodsBouygues.FindElementByLinkText(driver, "Mobile").click();;
+		//4 return homePage
+		
+		// 5 go to 
+		
+		// 6 return home
+		
+		// 7 go to 
+		
+		// 8 naviagte to home page
+		
+		// 7 go to 
+		
+		// 10 navigate to 
+		
+		// 11 return back
+		
+		// 12 close navigator
+		//MethodsBouygues.QuietNaviagtor(driver);
+
+}
+}

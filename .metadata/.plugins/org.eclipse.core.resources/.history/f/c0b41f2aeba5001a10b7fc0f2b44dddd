@@ -1,0 +1,10 @@
+package com.guru99;
+
+public class GuruMethods {
+	
+	public void LaunchNavigator(WebDriver driver, String Url)
+	{
+		
+	}
+
+}

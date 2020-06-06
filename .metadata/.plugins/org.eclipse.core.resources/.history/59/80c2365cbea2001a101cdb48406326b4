@@ -1,0 +1,78 @@
+package com.exo1.org;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class MyMethods {
+	
+	public static void LaunchNavigator (WebDriver driver, String BaseUrl)
+		{
+			driver.get(BaseUrl);
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				
+		}
+	public static void QuietNaviagtor(WebDriver driver)
+		{
+			driver.close();
+		}
+	// findElement by Name
+	 public static WebElement FindElementByName(WebDriver driver, String ElementName)
+		{
+			WebElement resultName = driver.findElement(By.name(ElementName));
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			return resultName;
+		}
+	 // find Element by Id
+	 public static WebElement FindElementById(WebDriver driver, String ElementId)
+		{
+			WebElement resultId = driver.findElement(By.id(ElementId));
+			return resultId;
+		}
+	 // find element by xPath
+	 public static WebElement FindElementByxPath(WebDriver driver, String ElementxPath)
+		{
+			WebElement resultxPath = driver.findElement(By.xpath(ElementxPath));
+			return resultxPath;
+		}
+	 
+	 // find Element by LinkText
+	 
+	 public static WebElement FindElementByLinkText(WebDriver driver, String ElementLinkText)
+	 	{
+		  	WebElement resultLinkText = driver.findElement(By.linkText(ElementLinkText));
+		  	return resultLinkText;
+	 	}
+	 
+	 // return Back
+	 public static void NavigateBack(WebDriver driver)
+	 	{
+		 	driver.navigate().back();
+	 	}
+	 
+	 // return homePage
+	 public static void returnHomePage(WebDriver driver, String homePage)
+		 {
+			 driver.navigate().to(homePage);
+		 }
+	// return forward
+	 public static void NavigateForwardPage(WebDriver driver)
+	 	{
+		 	driver.navigate().forward();
+	 	}
+	 
+	 //navigate to
+	 public static void navigateTo(WebDriver driver, String destinateTo)
+	 	{
+		 	driver.navigate().to(destinateTo);
+	 	}
+	 //get Title and Url
+	 public static  GetTitleAndUrl(WebDriver driver, String actualTitle)
+	 {
+		 actualTitle = driver.getCurrentUrl();
+		 return actualTitle;
+	 }
+}

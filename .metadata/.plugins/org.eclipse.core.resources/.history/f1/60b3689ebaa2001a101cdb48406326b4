@@ -1,0 +1,22 @@
+package com.exo1.org;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class MyMethods {
+	
+	public static void LaunchNavigator (WebDriver driver, String BaseUrl)
+		{
+			driver.get(BaseUrl);
+			driver.manage().window().maximize();
+				
+		}
+	
+	 public static WebElement FindElementByName(WebDriver driver, String ElementName)
+			{
+				WebElement resultName = driver.findElement(By.name(ElementName));
+				return resultName;
+			}
+
+}

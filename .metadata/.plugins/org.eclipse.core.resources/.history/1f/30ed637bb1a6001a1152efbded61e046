@@ -1,0 +1,10 @@
+package com.ebay.fr;
+
+public class MyMainEbay {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

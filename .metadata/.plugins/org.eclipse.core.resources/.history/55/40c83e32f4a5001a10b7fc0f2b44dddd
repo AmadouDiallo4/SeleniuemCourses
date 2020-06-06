@@ -1,0 +1,78 @@
+package com.guru99;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class GuruMethods {
+	
+	//launch navigator and maximize
+	public  static void LaunchNavigator(WebDriver driver, String Url)
+	{
+		driver.get(Url);
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	}
+	
+	//get title and url
+	public static void GetTitile_Url(WebDriver driver) 
+	{
+		String actualTitle = driver.getTitle();
+		String expectedTitle = "Meet Guru99 – Free Training Tutorials & Video for IT Courses";
+		System.out.println("Actual title is" + actualTitle);
+		
+		if (expectedTitle==actualTitle)
+			System.out.println("Test passed");
+		else 
+			System.out.println("Test Failed");
+		
+	}
+	
+	public static WebElement findElementById(WebDriver driver, String ElementId)
+	{
+		WebElement resultId = driver.findElement(By.id(ElementId));
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		return resultId;
+	}
+	// find element by xpath
+	public static WebElement findElementByXpath(WebDriver driver, String ElementxPath)
+	{
+		WebElement search = driver.findElement(By.xpath(ElementxPath));
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		return search;
+	}
+	// reflresh page 
+	public static void RefrechPage(WebDriver driver)
+	{
+		driver.navigate().refresh();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+	}
+	// find element by cssselector
+	public static WebElement findElementByCssSelector(WebDriver driver, String ElementCss)
+	{
+		WebElement resultCss = driver.findElement(By.cssSelector(ElementCss));
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		return resultCss;
+	}
+	// verify page image
+	public static boolean VerifyPage(WebDriver driver, String expectedTitle)
+	{
+		
+		if (driver.getTitle().equals(expectedTitle))
+		{
+			System.out.println("We are in selenium homepage");
+		}
+		else {
+			System.out.println("We are not in selenium's homepae");
+		}
+		return true;
+	}
+	//close navigator
+	public static void closNavigator(WebDriver driver)
+	{
+		driver.close();
+	}
+}

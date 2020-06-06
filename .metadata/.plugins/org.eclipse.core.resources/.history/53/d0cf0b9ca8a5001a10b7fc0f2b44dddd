@@ -1,0 +1,9 @@
+package StepDefinition;
+
+import cucumber.api.java.en.Given;
+
+public class Step {
+	
+	@Given("^Open the Firefox and launch the application$")
+
+}

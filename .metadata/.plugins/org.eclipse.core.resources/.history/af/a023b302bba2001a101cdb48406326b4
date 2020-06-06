@@ -1,0 +1,40 @@
+package com.exo1.org;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class MyMethods {
+	
+	public static void LaunchNavigator (WebDriver driver, String BaseUrl)
+		{
+			driver.get(BaseUrl);
+			driver.manage().window().maximize();
+				
+		}
+	// findElement by Name
+	 public static WebElement FindElementByName(WebDriver driver, String ElementName)
+			{
+				WebElement resultName = driver.findElement(By.name(ElementName));
+				return resultName;
+			}
+	 // find Element by Id
+	 public static WebElement FindElementById(WebDriver driver, String ElementId)
+		{
+			WebElement resultId = driver.findElement(By.id(ElementId));
+			return resultId;
+		}
+	 // find element by xPath
+	 public static WebElement FindElementByxPath(WebDriver driver, String ElementxPath)
+		{
+			WebElement resultxPath = driver.findElement(By.xpath(ElementxPath));
+			return resultxPath;
+		}
+	 
+	 // find Element by
+	 
+	 public static WebElement FindElementByLinkText(WebDriver driver, String ElementLinkText)
+	 {
+		 WebElement result = driver.findElement(By.linkText(ElementLinkText));
+	 }
+}

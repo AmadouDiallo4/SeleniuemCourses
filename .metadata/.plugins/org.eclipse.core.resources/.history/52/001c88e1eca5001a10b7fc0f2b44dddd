@@ -1,0 +1,18 @@
+package com.guru99;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import com.guru99.GuruMethods;
+public class GuruScenarios {
+	
+	WebDriver driver = new FirefoxDriver();
+	
+	public void DeroulScenari() {
+		
+		GuruMethods.LaunchNavigator(driver, "https://www.guru99.com");
+	}
+	
+	
+
+}
