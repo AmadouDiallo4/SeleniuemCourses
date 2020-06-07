@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-06-07T17:34:32 CEST" name="Default suite" finished-at="2020-06-07T17:34:59 CEST" duration-ms="26829">
+    <groups>
+    </groups>
+    <test started-at="2020-06-07T17:34:32 CEST" name="Default test" finished-at="2020-06-07T17:34:59 CEST" duration-ms="26829">
+      <class name="com.day1.ProjectKickOff">
+        <test-method signature="Launcbrowser()[pri:0, instance:com.day1.ProjectKickOff@fd07cbb]" started-at="2020-06-07T17:34:32 CEST" name="Launcbrowser" finished-at="2020-06-07T17:34:49 CEST" duration-ms="17009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Launcbrowser -->
+        <test-method signature="VerifyTitlePage()[pri:1, instance:com.day1.ProjectKickOff@fd07cbb]" started-at="2020-06-07T17:34:49 CEST" name="VerifyTitlePage" finished-at="2020-06-07T17:34:49 CEST" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTitlePage -->
+        <test-method signature="ClickOnMenuMobile()[pri:2, instance:com.day1.ProjectKickOff@fd07cbb]" started-at="2020-06-07T17:34:49 CEST" name="ClickOnMenuMobile" finished-at="2020-06-07T17:34:51 CEST" duration-ms="2066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnMenuMobile -->
+        <test-method signature="VerifyTitlePageMobile()[pri:3, instance:com.day1.ProjectKickOff@fd07cbb]" started-at="2020-06-07T17:34:51 CEST" name="VerifyTitlePageMobile" finished-at="2020-06-07T17:34:51 CEST" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTitlePageMobile -->
+        <test-method signature="SelectDropBox()[pri:4, instance:com.day1.ProjectKickOff@fd07cbb]" started-at="2020-06-07T17:34:51 CEST" name="SelectDropBox" finished-at="2020-06-07T17:34:53 CEST" duration-ms="1766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectDropBox -->
+        <test-method signature="CloseBrowser()[pri:5, instance:com.day1.ProjectKickOff@fd07cbb]" started-at="2020-06-07T17:34:53 CEST" name="CloseBrowser" finished-at="2020-06-07T17:34:59 CEST" duration-ms="5802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- com.day1.ProjectKickOff -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,150 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 14,
+        "name": "Verification of reset button with numbers of credential",
+        "description": "",
+        "id": "reset-functionality-on-login-page-of-application;verification-of-reset-button-with-numbers-of-credential;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 13247301000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open the Firefox and launch the application",
+            "match": {
+              "location": "Steps.open_the_Firefox_and_launch_the_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "Enter the Username User1 and  Password password1",
+            "match": {},
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Reset the credential",
+            "match": {
+              "location": "Steps.Reset_the_credential()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Verification of reset button with numbers of credential",
+        "description": "",
+        "id": "reset-functionality-on-login-page-of-application;verification-of-reset-button-with-numbers-of-credential;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 13834116600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open the Firefox and launch the application",
+            "match": {
+              "location": "Steps.open_the_Firefox_and_launch_the_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "Enter the Username User2 and  Password password2",
+            "match": {},
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Reset the credential",
+            "match": {
+              "location": "Steps.Reset_the_credential()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Verification of reset button with numbers of credential",
+        "description": "",
+        "id": "reset-functionality-on-login-page-of-application;verification-of-reset-button-with-numbers-of-credential;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 16023736500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open the Firefox and launch the application",
+            "match": {
+              "location": "Steps.open_the_Firefox_and_launch_the_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "Enter the Username User3 and  Password password3",
+            "match": {},
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Reset the credential",
+            "match": {
+              "location": "Steps.Reset_the_credential()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Reset functionality on login page of Application",
+    "description": "",
+    "id": "reset-functionality-on-login-page-of-application",
+    "keyword": "Feature",
+    "uri": "MyTest.feature"
+  }
+]
