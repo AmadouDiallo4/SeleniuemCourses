@@ -1,52 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-06-07T01:06:25 CEST" name="Default suite" finished-at="2020-06-07T01:07:39 CEST" duration-ms="73339">
+  <suite started-at="2020-06-08T01:34:55 CEST" name="Suite" finished-at="2020-06-08T01:35:13 CEST" duration-ms="18176">
     <groups>
     </groups>
-    <test started-at="2020-06-07T01:06:25 CEST" name="Default test" finished-at="2020-06-07T01:07:39 CEST" duration-ms="73339">
-      <class name="com.suite1.Flipkart">
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suite1.Flipkart@60015ef5]" started-at="2020-06-07T01:06:25 CEST" name="init" finished-at="2020-06-07T01:06:38 CEST" duration-ms="13051" status="PASS">
+    <test started-at="2020-06-08T01:34:55 CEST" name="Test" finished-at="2020-06-08T01:35:13 CEST" duration-ms="18176">
+      <class name="login_demo.LoginTestCase">
+        <test-method signature="LaunchNavigator()[pri:0, instance:login_demo.LoginTestCase@2b4bac49]" started-at="2020-06-08T01:34:55 CEST" name="LaunchNavigator" finished-at="2020-06-08T01:35:10 CEST" duration-ms="15307" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="searchAndSelectProduct()[pri:0, instance:com.suite1.Flipkart@60015ef5]" started-at="2020-06-07T01:06:38 CEST" name="searchAndSelectProduct" finished-at="2020-06-07T01:07:38 CEST" duration-ms="60204" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- LaunchNavigator -->
+        <test-method signature="LoginToTheApplication()[pri:1, instance:login_demo.LoginTestCase@2b4bac49]" started-at="2020-06-08T01:35:10 CEST" name="LoginToTheApplication" finished-at="2020-06-08T01:35:13 CEST" duration-ms="2720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginToTheApplication -->
+        <test-method signature="TestFail()[pri:2, instance:login_demo.LoginTestCase@2b4bac49]" started-at="2020-06-08T01:35:13 CEST" name="TestFail" finished-at="2020-06-08T01:35:13 CEST" duration-ms="5" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Unable to locate element: /html/body/div[1]/div/div[1]/div[1]/div[2]/div[2]/form/div/button/svg/g/path[2]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:05:20.749Z'
-System info: host: 'DESKTOP-UKPN5A1', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.7'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 6212, moz:profile: C:\Users\diall\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 47b26d6e-26f8-4f6a-93ac-9bedafe156c2
-*** Element info: {Using=xpath, value=/html/body/div[1]/div/div[1]/div[1]/div[2]/div[2]/form/div/button/svg/g/path[2]}]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: /html/body/div[1]/div/div[1]/div[1]/div[2]/div[2]/form/div/button/svg/g/path[2]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:05:20.749Z'
-System info: host: 'DESKTOP-UKPN5A1', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.7'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 6212, moz:profile: C:\Users\diall\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 47b26d6e-26f8-4f6a-93ac-9bedafe156c2
-*** Element info: {Using=xpath, value=/html/body/div[1]/div/div[1]/div[1]/div[2]/div[2]/form/div/button/svg/g/path[2]}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-at com.suite1.Flipkart.searchAndSelectProduct(Flipkart.java:47)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:968)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at login_demo.LoginTestCase.TestFail(LoginTestCase.java:49)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -77,11 +57,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchAndSelectProduct -->
-      </class> <!-- com.suite1.Flipkart -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- TestFail -->
+      </class> <!-- login_demo.LoginTestCase -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
