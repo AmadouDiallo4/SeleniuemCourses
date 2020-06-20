@@ -70,7 +70,6 @@ INDEX VERSION 1.131+C:\Users\diall\eclipse-workspace\.metadata\.plugins\org.ecli
 1977036330.index
 3704302639.index
 3762668217.index
-3853995095.index
 392474863.index
 2055396356.index
 186117902.index

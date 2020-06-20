@@ -10,33 +10,12 @@
     <body>
       <%@ include file = "menu.jsp" %>
         <p>
-            Bonjour 
-            <%
-                    String name = (String) request.getAttribute("name");
-                                  
-                    out.print(name  );
-             
-            %>
-                    
-            <%
-                      String prename = (String) request.getAttribute("prename");
-                      out.print(prename  );
-            %>
-            , agé de 
-            <%
-                    String age = (String) request.getAttribute("age");
-                    out.print(age    );
-            %>
-            ans, 
-            résident à
-                       
-            
-            <%
-                     String ville = (String) request.getAttribute("ville");
-                     out.print(ville   );
-            %>
-            
+            Bonjour ${ auteur.name } ${ auteur.prename } 
+                
         </p>
+        <p>  ${ auteur.actif ? 'Vous êtes trés actif' : 'Vous êtes inactifs'}</p>
+       
+             
         
     </body>
 </html>
