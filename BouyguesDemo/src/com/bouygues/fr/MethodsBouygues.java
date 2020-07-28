@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;;
 
 public class MethodsBouygues {
@@ -19,11 +20,6 @@ public class MethodsBouygues {
 					
 			}
 		
-		public static void tearDown(WebDriver driver)
-			{
-				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-				driver.close();
-			}
 		
 		// findElement by Name
 		 public static WebElement FindElementByName(WebDriver driver, String ElementName)
@@ -86,7 +82,7 @@ public class MethodsBouygues {
 			 System.out.println("current title:" +actualTitle);
 			 String expectedTitle = "Bouygues Telecom | téléphone, forfait mobile, offre internet";
 			 //compare
-			 if (actualTitle==expectedTitle)
+			 if (actualTitle.equalsIgnoreCase(expectedTitle))
 				 System.out.println("Test Passed: get right title");
 			 else 
 				 System.out.println("Test False: wrong title");
@@ -97,6 +93,12 @@ public class MethodsBouygues {
 		 public static void waitUntilPageLoaded(WebDriver driver)
 		 {
 			new WebDriverWait(driver, pageLoadTimeout).until(webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
+		 }
+		 
+		 public static void waitUntilElementsXpath(WebDriver driver, String elemXpath)
+		 {
+			new WebDriverWait(driver, pageLoadTimeout).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(elemXpath)));
+
 		 }
 	}
 
